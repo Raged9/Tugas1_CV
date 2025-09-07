@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container .left-side {
+    position: relative;
+    background: darkslategrey;
+    padding: 40px;
+}
+
+.profiletext {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(225,225,225,0.2);
+}
+
+.profiletext .imgbox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profiletext .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+
+.profiletext h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+
+.profiletext h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactlist {
+    padding-top: 40px;
+}
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactlist ul {
+    position: relative;
+}
+
+.contactlist ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactlist ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: cadetblue;
+}
+
+.contactlist ul li span {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.contactlist.educationlist li {
+    margin-bottom: 15px;
+}
+
+.contactlist.educationlist h5 {
+    color: cadetblue;
+    font-weight: 500;
+}
+
+.contactlist.educationlist h4:nth-child(2) {
+    color: white;
+    font-weight: 500;
+}
+
+.contactlist.educationlist h4 {
+    color: white;
+    font-weight: 300;
+}
+
+.container .right-side {
+    position: relative;
+    background: white;
+    padding: 40px;
+
+}
